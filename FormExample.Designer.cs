@@ -73,6 +73,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пример использования сохранения состояния приложения при использовании коллекции " +
     "строк";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormExample_FormClosing);
+            this.Load += new System.EventHandler(this.FormExample_Load);
             this.ResumeLayout(false);
 
         }
